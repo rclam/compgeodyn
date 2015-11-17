@@ -10,7 +10,8 @@ Setting up a Linux development environment using Docker
 4. Run on #1: adduser ${USER} sudo: e.g., adduser jdoe sudo
 5. Run on #1: su ${USER}: e.g., su jdoe
 6. Install any other packages you need on #1
-e.g., sudo apt-get -y install gcc 
+e.g., sudo apt-get update
+      sudo apt-get -y install gcc 
       sudo apt-get -y install g++
       sudo apt-get -y install gdb
       sudo apt-get -y install make
