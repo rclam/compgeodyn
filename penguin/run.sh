@@ -1,7 +1,3 @@
-Job ID                    Name             User            Time Use S Queue
-------------------------- ---------------- --------------- -------- - -----
-158270.pbs                 matmult          echoi2                 0 Q thin
-[echoi2@login1 penguin]$ cat run.sh
 #!/bin/sh
 ## #PBS -l : list of resources such as nodes, walltime and mem.
 ## - nodes
@@ -11,16 +7,16 @@ Job ID                    Name             User            Time Use S Queue
 ## - walltime
 ##   run for 10 minutes: -l walltime=00:10:00
 ## - mem
-##   To be added.
+##   units of 'b','kb', 'mb' or 'gb': -l mem=2gb
 ##
 #PBS -l nodes=1:default:ppn=16 #:gpus=0
 #PBS -l walltime=00:10:00
 #PBS -A CERI        # account
 #PBS -N matmult     # jobname
-#PBS -j oe          # join the contests of STDOUT and STDERR into one file.
 #PBS -q thin        # For full information about available queues: 'qstat -Q -f'
-#PBS -o ${JOB_ID}.o # name of a file to store STDOUT
-#PBS -e ${JOB_ID}.e # name of a file to store STDERR
+#PBS -o myjob.o # name of a file to store STDOUT
+#PBS -e myjob.e # name of a file to store STDERR
+##PBS -j oe          # join the contests of STDOUT and STDERR into one file.
 
 # source the module command
 source /etc/profile.d/modules.sh
@@ -31,8 +27,8 @@ source /etc/profile.d/modules.sh
 cd $PBS_O_WORKDIR # this is the directory where you submit this job.
 
 # if this is an MPI job: e.g.,
-time mpirun -np `cat $PBS_NODEFILE | wc -l` ./matmultc
+time mpirun -machinefile ${PBS_NODEFILE} -np `cat $PBS_NODEFILE | wc -l` ./matmultc
 
 # if this is an OpenMP job: e.g.,
-OMP_NUM_THREADS=4
-time ./matmultc
+# OMP_NUM_THREADS=4
+# time ./matmultc
