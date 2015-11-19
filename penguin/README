@@ -1,5 +1,15 @@
-PBS Summary (excerpted from http://linuxinfo.physik.hu-berlin.de/pbs.html)
+################################################
+How to test the job script, 'run.sh', on penguin
+################################################
+1. Log in to penguin.
+2. Load an MPI module: e.g., openmpi/1.8.6/gcc.4.4.7 
+3. Compile matmultc.c: mpicc -o matmultc matmultc.c
+4. Submit a job using run.sh: qsub ./run.sh
+5. Check the status and the results: e.g., qstat ${JOB_ID} while still running.
 
+##################################################
+PBS Summary (excerpted from http://linuxinfo.physik.hu-berlin.de/pbs.html)
+##################################################
 Batch jobs are managed by Torque, a free version of PBS.
 A PBS server treats all associated machines as nodes of one big cluster and uses queues to allocate their resources. 
 In the simplest case, there is just one default queue ("defq") defined. 
