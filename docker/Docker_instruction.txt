@@ -19,6 +19,12 @@ e.g., sudo apt-get update
       sudo apt-get -y install libboost-all-dev
       sudo apt-get -y install man
       sudo apt-get -y install emacs
+Tip: In case of trouble with installing packages with apt-get, 
+      you might need to change the DNS server.
+      Add these two lines at the top of /etc/resolv.conf:
+          nameserver 8.8.8.8
+          nameserver 8.8.4.4
+      (courtesy of Chunyu Liu, cliu5@memphis.edu)
 
 7. Start ANOTHER docker terminal (#2)
 8. In the second terminal (#2), run 'docker ps' and get the container ID.
