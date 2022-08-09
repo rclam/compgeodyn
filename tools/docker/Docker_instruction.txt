@@ -1,0 +1,47 @@
+https://youtu.be/mVPExRXnCwA
+
+Setting up a Linux development environment using Docker
+0. Install Docker and create an account on dockerhub.com
+1. Start a docker terminal(#1)
+2. Run on #1: docker run -ti -v ${HOME}:/home/${USER} ubuntu:14.04 bash
+   e.g., if your user id on the host system (OS X) is jdoe,
+         docker run -ti -v /Users/jdoe:/home/jdoe ubuntu:14.04 bash
+3. Run on #1: adduser ${USER}: e.g., adduser jdoe
+4. Run on #1: adduser ${USER} sudo: e.g., adduser jdoe sudo
+5. Run on #1: su ${USER}: e.g., su jdoe
+6. Install any other packages you need on #1
+e.g., sudo apt-get update
+      sudo apt-get -y install gcc 
+      sudo apt-get -y install g++
+      sudo apt-get -y install gdb
+      sudo apt-get -y install make
+      sudo apt-get -y install git
+      sudo apt-get -y install libboost-all-dev
+      sudo apt-get -y install man
+      sudo apt-get -y install emacs
+Tip: In case of trouble with installing packages with apt-get, 
+      you might need to change the DNS server.
+      Add these two lines at the top of /etc/resolv.conf:
+          nameserver 8.8.8.8
+          nameserver 8.8.4.4
+      (courtesy of Chunyu Liu, cliu5@memphis.edu)
+
+7. Start ANOTHER docker terminal (#2)
+8. In the second terminal (#2), run 'docker ps' and get the container ID.
+For example, the ID is 69fdc83030ca in the example below
+
+[eunseo@Coulomb ~]$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+69fdc83030ca        ubuntu:14.04        "bash"              6 seconds ago       Up 6 seconds                            nostalgic_mirzakhani
+
+9. Run: docker commit ${CONTAINER_ID} TAG, where TAG can be something like ${DOCKER_HUB_ID}/devenv:init
+    If your id on https://hub.docker.com/ is jdoe_on_dh, the tag would be jdoe_on_dh/devenv:init.
+    So, the full command is 'docker commit 69fdc83030ca jdoe_on_dh/devenv:init'
+10. Run: docker login
+11. Run: docker push ${DOCKER_HUB_ID}/dev_env:init
+12. Repeat 6, 8, 9 and 11 as necessary, updating the image with a proper tag.
+13. Later you can start a "container" by running an image you want and start working as if you were on a linux machine.
+    e.g., docker pull jdoe_on_dh/devenv:latest; docker run -ti jdoe_on_dh/devenv:latest bash
+    
+    Or you can pull an image that already has been configured: 
+    e.g. docker pull eunseochoi/devenv:boost_added

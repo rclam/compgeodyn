@@ -1,0 +1,75 @@
+################################################
+How to test the job script, 'run.sh', on penguin
+################################################
+1. Log in to penguin.
+2. Load an MPI module: e.g., openmpi/1.8.6/gcc.4.4.7 
+3. Compile matmultc.c: mpicc -o matmultc matmultc.c
+4. Submit a job using run.sh: qsub ./run.sh
+5. Check the status and the results: e.g., qstat ${JOB_ID} while still running.
+
+##################################################
+PBS Summary (excerpted from http://linuxinfo.physik.hu-berlin.de/pbs.html)
+##################################################
+Batch jobs are managed by Torque, a free version of PBS.
+A PBS server treats all associated machines as nodes of one big cluster and uses queues to allocate their resources. 
+In the simplest case, there is just one default queue ("defq") defined. 
+Use the pbsnodes and qstat commands below to show the configuration in detail. Submit jobs with qsub.
+
+Node info
+      pbsnodes -a             # show status of all nodes
+      pbsnodes -a <node>      # show status of specified node
+      pbsnodes -l             # list inactive nodes
+
+      pbsnodelist             # list status of all nodes (one per line)
+      pbsnodelist -h          # help
+      pbssummary              # cluster usage (table)
+      pbssummary -h           # help
+
+Queue info
+      qstat -Q                      # show all queues
+      qstat -Q <queue>              # show status of specified queue
+      qstat -f -Q <queue>           # show full info for specified queue
+      qstat -q                      # show all queues (alternative format)
+      qstat -q <queue>              # show status of specified queue (alt.)
+
+      pbsuserlist                   # list node and core usage per user
+      pbsuserlist -h                # help      
+
+Job submission and monitoring
+      qsub <jobscript>              # submit to default queue
+      qsub -q <queue> <jobscript>   # submit to specified queue
+
+      other useful qsub options:
+           -N <jobname>             # set job name (default: name of jobscript)
+
+           -r n                     # don't rerun the job if system fails
+                                    #     (default: yes)
+
+           -k oe                    # keep the job's current output and error files
+                                    #     in the user's HOME directory
+                                    #     (default: deliver them in the end)
+
+           -M <email>               # full email address for notification
+                                    #     (firewall: must be inside of HU)
+           -m bea                   # send email at beginning, end, abort of job
+
+      qdel <job_no>                 # delete job (with <job_no> from qstat)
+
+      qstat -a                      # show all jobs
+      qstat -a <queue>              # show all jobs in specified queue        
+      qstat -f <job_no>             # show full info for specified job
+      qstat -n                      # show all jobs and the nodes they occupy
+
+      pbsjoblist                    # list jobs with resource usage
+      pbsjoblist -h                 # help
+
+Jobscript
+
+The jobscript is a shell script with the commands to run the program, copy files etc. 
+Above the shell commands, it may contain qsub options in lines starting with #PBS . 
+
+See the included sample jobscript, run.sh.
+
+---------------
+last modified: 
+B Bunk Thu Oct 31 20:59:00 CET 2013
