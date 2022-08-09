@@ -92,7 +92,7 @@ for computational research.
         (OpenMP, MPI, GPU etc)\
         <https://cvw.cac.cornell.edu/topics>
 
-## Term projects {#term-projects .unnumbered}
+## Term projects
 
 -   Students carry out a reasonably small but non-trivial project
     relevant to the course's goal and objectives.
@@ -119,7 +119,7 @@ for computational research.
     -   Introduce recent advances in physics-informed neural networks
         (PINNs)
 
-## Course Outline {#course-outline .unnumbered}
+## Course Outline
 
 -   Week 1: A short review of continuum mechanics
 
@@ -127,17 +127,13 @@ for computational research.
 
 -   Week 3: Numerical toolbox - [Interpolation: Lagrange polynomial](https://github.com/echoi/compgeodyn/blob/master/PiecewisePolynomialInterpolation.ipynb)
 
--   Week 4: Numerical toolbox - [Interpolation: Piecewise Lagrange
-    polynomal interpolation in 2D](https://github.com/echoi/compgeodyn/blob/master/PiecewisePolynomialInterpolation.ipynb)
+-   Week 4: Numerical toolbox - [Interpolation: Piecewise Lagrange polynomal interpolation in 2D](https://github.com/echoi/compgeodyn/blob/master/PiecewisePolynomialInterpolation.ipynb)
 
--   Week 5: Numerical toolbox - Solving linear equations: Basic
-    stability analysis and direct method
+-   Week 5: Numerical toolbox - [Solving linear equations: Basic stability analysis and direct method](https://github.com/echoi/compgeodyn/blob/master/LinearSystemSolvers.ipynb)
 
--   Week 6: Numerical toolbox - Solving linear equations: Iterative
-    methods and conjugate gradient method
+-   Week 6: Numerical toolbox - [Solving linear equations: Iterative methods and conjugate gradient method](https://github.com/echoi/compgeodyn/blob/master/LinearSystemSolvers.ipynb)
 
--   Week 7: Numerical toolbox - Solving linear equations: Krylov
-    subspace methods. Solving non-linear systems
+-   Week 7: Numerical toolbox - [Solving linear equations: Krylov subspace methods](https://github.com/echoi/compgeodyn/blob/master/LinearSystemSolvers.ipynb). Solving non-linear systems
 
 -   Week 8: Numerical toolbox - Approximating function derivatives:
     Finite difference and interpolation-based approach
