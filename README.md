@@ -125,10 +125,10 @@ for computational research.
 
 -   Week 2: Numerical toolbox - [Principles of numerical mathematics](https://github.com/echoi/compgeodyn/blob/master/Principles.ipynb)
 
--   Week 3: Numerical toolbox - Interpolation: Lagrange polynomial
+-   Week 3: Numerical toolbox - [Interpolation: Lagrange polynomial](https://github.com/echoi/compgeodyn/blob/master/PiecewisePolynomialInterpolation.ipynb)
 
--   Week 4: Numerical toolbox - Interpolation: Piecewise Lagrange
-    polynomal interpolation in 2D
+-   Week 4: Numerical toolbox - [Interpolation: Piecewise Lagrange
+    polynomal interpolation in 2D](https://github.com/echoi/compgeodyn/blob/master/PiecewisePolynomialInterpolation.ipynb)
 
 -   Week 5: Numerical toolbox - Solving linear equations: Basic
     stability analysis and direct method
