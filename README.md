@@ -135,11 +135,9 @@ for computational research.
 
 -   Week 7: Numerical toolbox - [Solving linear equations: Krylov subspace methods](https://github.com/echoi/compgeodyn/blob/master/LinearSystemSolvers.ipynb). Solving non-linear systems
 
--   Week 8: Numerical toolbox - Approximating function derivatives:
-    Finite difference and interpolation-based approach
+-   Week 8: Numerical toolbox - [Approximating function derivatives: Finite difference and interpolation-based approach](https://github.com/echoi/compgeodyn/blob/master/ApproximatingFunctionDerivatives.ipynb)
 
--   Week 9: Numerical toolbox - Approximating function derivatives:
-    Orthogonal polynomials and weight functions
+-   Week 9: Numerical toolbox - [Approximating function derivatives: Orthogonal polynomials and weight functions](https://github.com/echoi/compgeodyn/blob/master/ApproximatingFunctionDerivatives.ipynb)
 
 -   Week 10: Numerical toolbox - Numerical integration: Gauss and
     Gauss-Lobatto quadrature formula
