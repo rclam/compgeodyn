@@ -6,18 +6,18 @@
 
 **Contact:** echoi2\@memphis.edu
 
-## Grades {#grades}
+## Grades
 
 - Topical homeworks: 50 %
 - Term project: 30 %
 - Quizzes: 20 %
 
-## Office Hours {#office-hours .unnumbered}
+## Office Hours
 
 - To be arranged individually
 - Chatting and meeting via MS Teams preferred
 
-## Goal and Objectives {#course-goal-and-objectives .unnumbered}
+## Goal and Objectives
 
 This course aims to enable students to understand the basics of the finite element method (FEM), 
 a versatile numerical method for solving partial differential equations.
@@ -44,9 +44,10 @@ used.\
 
 ### Reference texts[^1]
 [^1]: $^{\dagger}$ means that the UofM Library has an ebook version.
+
 -   Continuum mechanics:
 
-    - Tadmor, E. B., Elliott, R. S., and Miller, R. E. (2012). *Continuum Mechanics and Thermodynamics: From Fundamental Concepts to Governing Equations*. Cambridge University Press,
+    - $^{\dagger}$ Tadmor, E. B., Elliott, R. S., and Miller, R. E. (2012). *Continuum Mechanics and Thermodynamics: From Fundamental Concepts to Governing Equations*. Cambridge University Press,
 Cambridge
     - Holzapfel, G. A. (2000). *Nonlinear solid mechanics : a continuum approach for engineering*.
 Wiley, Chichester ; New York
@@ -55,19 +56,19 @@ Upper Saddle River, New Jersey
 
 -   Fundamental numerical techniques
 
-    - Quarteroni, A., Sacco, R., and Saleri, F. (2000). *Numerical Mathematics*. Springer-Verlag,
+    - $^{\dagger}$ Quarteroni, A., Sacco, R., and Saleri, F. (2000). *Numerical Mathematics*. Springer-Verlag,
 New York
-    - Zienkiewicz, O. C., Zhu, J. Z., and Taylor, R. L. (2013). *The Finite Element Method: Its Basis
+    - $^{\dagger}$ Zienkiewicz, O. C., Zhu, J. Z., and Taylor, R. L. (2013). *The Finite Element Method: Its Basis
 and Fundamentals*. Butterworth-Heinemann, 7th edition
-    - Ismail-Zadeh, A. and Tackley, P. (2010). *Computational Methods for Geodynamics*. Cambridge University Press
-    - Gerya, T. (2009). *Introduction to Numerical Geodynamic Modelling*. Cambridge University
+    - $^{\dagger}$ Ismail-Zadeh, A. and Tackley, P. (2010). *Computational Methods for Geodynamics*. Cambridge University Press
+    - $^{\dagger}$ Gerya, T. (2009). *Introduction to Numerical Geodynamic Modelling*. Cambridge University
 Press, New York
 
 -   Geodynamics:
 
     - Turcotte, D. L. and Schubert, G. (2002). *Geodynamics*. Cambridge University Press, New
 York, 2nd edition  
-    - Schubert, G., Turcotte, D. L., and Olson, P. (2001). *Mantle Convection in the Earth and
+    - $^{\dagger}$ Schubert, G., Turcotte, D. L., and Olson, P. (2001). *Mantle Convection in the Earth and
 Planets*. Cambridge University Press, Cambridge
     - Davies, G. F. (1999). *Dynamic Earth: Plates, Plumes, and Mantle Convection*. Cambridge
 University Press, Cambridge  
