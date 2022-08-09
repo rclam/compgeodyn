@@ -123,7 +123,7 @@ for computational research.
 
 -   Week 1: A short review of continuum mechanics
 
--   Week 2: Numerical toolbox - Principles of numerical mathematics
+-   Week 2: Numerical toolbox - [Principles of numerical mathematics](https://github.com/echoi/compgeodyn/blob/master/Principles.ipynb)
 
 -   Week 3: Numerical toolbox - Interpolation: Lagrange polynomial
 
