@@ -120,49 +120,44 @@ for computational research.
 
 ## Course Outline {#course-outline .unnumbered}
 
--   Unit 1: A short review of continuum mechanics
+-   Week 1: A short review of continuum mechanics
 
--   Unit 2: Numerical toolbox - Principles of numerical mathematics
+-   Week 2: Numerical toolbox - Principles of numerical mathematics
 
--   Unit 3: Numerical toolbox - Interpolation: Lagrange polynomial
+-   Week 3: Numerical toolbox - Interpolation: Lagrange polynomial
 
--   Unit 3: Numerical toolbox - Interpolation: Piecewise Lagrange
+-   Week 4: Numerical toolbox - Interpolation: Piecewise Lagrange
     polynomal interpolation in 2D
 
--   Unit 4: Numerical toolbox - Solving linear equations: Basic
+-   Week 5: Numerical toolbox - Solving linear equations: Basic
     stability analysis and direct method
 
--   Unit 4: Numerical toolbox - Solving linear equations: Iterative
+-   Week 6: Numerical toolbox - Solving linear equations: Iterative
     methods and conjugate gradient method
 
--   Unit 4: Numerical toolbox - Solving linear equations: Krylov
+-   Week 7: Numerical toolbox - Solving linear equations: Krylov
     subspace methods. Solving non-linear systems
 
--   Unit 5: Numerical toolbox - Approximating function derivatives:
+-   Week 8: Numerical toolbox - Approximating function derivatives:
     Finite difference and interpolation-based approach
 
--   Unit 5: Numerical toolbox - Approximating function derivatives:
+-   Week 9: Numerical toolbox - Approximating function derivatives:
     Orthogonal polynomials and weight functions
 
--   Unit 6: Numerical toolbox - Numerical integration: Gauss and
+-   Week 10: Numerical toolbox - Numerical integration: Gauss and
     Gauss-Lobatto quadrature formula
 
--   Unit 7: Basic finite element method - Weak forms and variational
+-   Week 11: Basic finite element method - Weak forms and variational
     principles
 
--   Unit 8: Basic finite element method - Walkthrough with the Poisson
+-   Week 12: Basic finite element method - Walkthrough with the Poisson
     eq. in 1D
 
--   Unit 9: Basic finite element method - Extension to 2D and 3D
+-   Week 13: Basic finite element method - Extension to 2D and 3D
 
+-   Week 14: Basic finite element method - Solving time-dependent PDEs
 
--   Unit 10: Basic finite element method - Solving time-dependent PDEs
-
--   Unit 11: Selected Topics
-
+-   Week 15: Selected Topics
     -   Elastic deformation: Static and Dynamic
-
     -   Basic parallel computing
-
     -   Introduction to open-source codes: PyLith, ASPECT, FEniCS, or DES3D
-
