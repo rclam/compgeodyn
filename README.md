@@ -37,7 +37,7 @@ To achieve the goal, we will
 4.  use one of the open-source FEM codes, possibly after modifications,
     for their term project.
 
-## References and Online Resources {#references-and-online-resources .unnumbered}
+## References and Online Resources
 
 No required textbook but parts of the references listed below will be
 used.\
