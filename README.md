@@ -121,7 +121,7 @@ for computational research.
 
 ## Course Outline
 
--   Week 1: A short review of continuum mechanics
+-   Week 1: [A short review of continuum mechanics](https://github.com/echoi/compgeodyn/blob/master/ContinuumMechanicsReview.pdf)
 
 -   Week 2: Numerical toolbox - [Principles of numerical mathematics](https://github.com/echoi/compgeodyn/blob/master/Principles.ipynb)
 
