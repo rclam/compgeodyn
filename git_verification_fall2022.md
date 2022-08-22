@@ -3,4 +3,4 @@ Put down your first name next to your entry and then submit a pull request.
 - Hosain, Alamgir:
 - Nadimi, Khadija:
 - Silva, Kuruvitage Chameera Chathuranga:
-- Thapa, Navin:
+- Thapa, Navin: Navin
