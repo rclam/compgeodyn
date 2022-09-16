@@ -9,8 +9,8 @@
 ## Grades
 
 - Topical homeworks: 50 %
-- Term project: 30 %
-- Quizzes: 20 %
+- Term project: 30 % --> 20 % (?)
+- Quizzes: 20 % --> 30 % (?)
 
 ## Office Hours
 
